@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.bg {
+			background-color: black;
+		}
+		.spongebob{
+
+			width: 400px;
+			height: 400px;
+			display: none;
+			position: absolute;
+			left: 520px;
+			top: 70px
+		}
+		.proigral{
+			width: 1498px;
+			height: 750px;
+			position: absolute;
+			background: red;
+			left: -320px;
+			top: 0px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- это div-родитель -->
+	<div class="col-7 bg-light mx-auto">
+		<div>
+			<img class="spongebob" src="spongebob.png">
+			<h1 class="task">Найди спрятанное золото. Попробуй собрать 6 баллов</h1>
+			<h1>Score: <span class="score">0</span></h1>
+			<h1>Попыток: <span class="flop">0</span></h1>
+		</div>
+		<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+		<div class="row">
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3 bg-warning text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>6</h4>
+			</div>
+		</div>
+		<!--Линия А-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>A</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border treasure">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border coin">
+				
+			</div>
+		</div>
+		<!--Линия B-->
+		<div class="row">
+			<div class="col-1  px-5 py-4 bg-warning text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bang bg border ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border treasure">
+				
+			</div>
+		</div>
+		<!--Линия C-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border meme">
+				
+			</div>	
+		</div>
+		<!--Линия D-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>D</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border treasure">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+		</div>
+		<!--Линия E-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>E</h4>
+			</div>
+			<div class="col-1 px-5 py-4  bg border treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border coin">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme ">
+				
+			</div>
+		</div>
+		<!--Линия F-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border coin">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border meme">
+				
+			</div>
+			<img class="proigral" src="NOYHb3M.png">
+		</div>
+	</div>
+	<script type="text/javascript">
+		// Есть treasure bang meme coin
+		let coin = document.querySelectorAll(".coin")
+		let treasure = document.querySelectorAll(".treasure")
+		let meme = document.querySelectorAll(".meme")
+		let band = document.querySelectorAll(".bang")
+		let score = 0
+		let flop = 10
+		let clicked = [0,0,0,0]
+
+		for(let i = 0; i < 7; i++){
+			coin[i].onclick = function(){
+				if (clicked[i] == 0){
+					score = score + 1;
+				document.querySelector(".score").innerHTML = score;
+				flop = flop - 1;
+				document.querySelector(".flop").innerHTML = flop;
+				coin[i].style.backgroundColor = "green";
+				coin[i].style.backgroundImage = "url(uzym.png)";
+				coin[i].style.backgroundSize = "100% 100%";
+				clicked[i] = 1
+				if (score == 6){
+					alert("winner");
+					document.querySelector(".spongebob").style.display = "block"
+				}
+				if(flop == 0){
+					document.querySelector(".proigral").style.display = "block"
+				}
+				}
+			}
+		}
+		for(let m = 0; m < 17; m++){
+			meme[m].onclick = function(){
+					flop = flop - 1;
+				document.querySelector(".flop").innerHTML = flop;
+				meme[m].style.backgroundColor = "white";
+				meme[m].style.backgroundImage = "url(mem.jpg)";
+				meme[m].style.backgroundSize = "100% 100%";
+				if(flop == 0){
+					document.querySelector(".proigral").style.display = "block"
+				}
+			}
+		}
+		for(let t = 0; t < 6; t++){
+			treasure[t].onclick = function(){
+				score = score + 1;
+				document.querySelector(".score").innerHTML = score;
+				flop = flop - 1;
+				document.querySelector(".flop").innerHTML = flop;
+				treasure[t].style.backgroundColor = "blue";
+				treasure[t].style.backgroundImage = "url(almaz.png)";
+				treasure[t].style.backgroundSize = "100% 100%";
+				if (score == 6){
+					alert("winner");
+					document.querySelector(".spongebob").style.display = "block"
+				}
+				if(flop == 0){
+					document.querySelector(".proigral").style.display = "block"
+				}
+			}
+		}
+		for(let q = 0; q < 6; q++){
+			band[q].onclick = function(){
+				score = score - 1;
+				document.querySelector(".score").innerHTML = score;
+				flop = flop - 1;
+				document.querySelector(".flop").innerHTML = flop;
+				band[q].style.backgroundColor = "black";
+				band[q].style.backgroundImage = "url(kruper.png)";
+				band[q].style.backgroundSize = "100% 100%";
+				if(flop == 0){
+					document.querySelector(".proigral").style.display = "block"
+				}
+			}
+		}
+	</script>
+</body>
+</html>
